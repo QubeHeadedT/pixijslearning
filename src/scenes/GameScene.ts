@@ -22,7 +22,7 @@ export class GameScene extends Container implements IScene {
         this.clampySpeed = 5;
     }
     public update(framesPassed: number): void {
-        // Lets move clampy!
+
         this.clampy.x += this.movement * this.clampySpeed * framesPassed;
 
         if (this.clampy.x > Manager.width) {
